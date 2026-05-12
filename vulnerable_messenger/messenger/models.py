@@ -3,7 +3,7 @@ from django.db import models
     
     
 class User(models.Model):
-    name = models.CharField()
+    name = models.CharField(max_length=30)
     user_id = models.IntegerField()
     isadmin = models.BooleanField(default=False)
     
